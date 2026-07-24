@@ -1,0 +1,46 @@
+# Person Class (Parent Class)
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_person(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+
+# Student Class (Child Class)
+
+class Student(Person):
+    def __init__(self, name, age, roll_number):
+        super().__init__(name, age)
+        self.roll_number = roll_number
+
+    def display_student(self):
+        self.display_person()
+        print("Roll Number:", self.roll_number)
+
+
+# Teacher Class (Child Class)
+
+class Teacher(Person):
+    def __init__(self, name, age, subject):
+        super().__init__(name, age)
+        self.subject = subject
+
+    def display_teacher(self):
+        self.display_person()
+        print("Subject:", self.subject)
+
+
+# Create Objects
+student1 = Student("Ali", 20, "101")
+teacher1 = Teacher("Sara", 35, "Computer Science")
+
+# Display Information
+print("----- Student Information -----")
+student1.display_student()
+
+print("\n----- Teacher Information -----")
+teacher1.display_teacher()
