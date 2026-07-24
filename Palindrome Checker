@@ -1,0 +1,12 @@
+# Palindrome Checker
+
+text = input("Enter a word: ")
+
+# Reverse the text
+reverse_text = text[::-1]
+
+# Check if both are the same
+if text == reverse_text:
+    print("It is a palindrome.")
+else:
+    print("It is not a palindrome.")
