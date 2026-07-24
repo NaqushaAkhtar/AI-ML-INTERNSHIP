@@ -1,0 +1,56 @@
+# Welcome Message Program
+print("Welcome to Python Programming!")
+print("Have a great day!")
+
+# User Information Input Program
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+city = input("Enter your city: ")
+print("\n--- User Information ---")
+print("Name:", name)
+print("Age:", age)
+print("City:", city)
+
+# Simple Calculator Program
+
+# Take input from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Perform calculations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+
+# Display results
+print("\n--- Calculator Results ---")
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+
+# Even/Odd Number Checker
+
+# Take input from the user
+number = int(input("Enter a number: "))
+
+# Check if the number is even or odd
+if number % 2 == 0:
+    print(number, "is an Even number.")
+else:
+    print(number, "is an Odd number.")
+    # Largest of Three Numbers
+
+# Take input from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+# Check the largest number
+if num1 >= num2 and num1 >= num3:
+    print(num1, "is the largest number.")
+elif num2 >= num1 and num2 >= num3:
+    print(num2, "is the largest number.")
+else:
+    print(num3, "is the largest number.")
